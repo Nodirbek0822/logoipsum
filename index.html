@@ -16,34 +16,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
-    <style>
-      .font-dm {
-        font-family: "DM Sans", sans-serif;
-      }
-      .font-mulish {
-        font-family: "Mulish", sans-serif;
-      }
-      .qora:hover {
-        color: #19191b;
-      }
-      .kulrang {
-        color: #696871;
-      }
-      .bg__kulrang {
-        background-color: #f7f7fb;
-      }
-      .pattern {
-        color: #5454d4;
-        background-color: #5454d4;
-      }
-      .btn {
-        background-color: #ff7143;
-      }
-      .yashil {
-        background-color: #5454d4;
-      }
-    </style>
+    <title>LogoIpsum</title>
   </head>
   <body>
     <header
@@ -59,28 +32,28 @@
       <nav class="navbar flex gap-[50px] items-center">
         <a
           href="#"
-          class="font-dm font-bold text-[15px] leading-[100%] tracking-[-0.47px] text-[#696871] transition-[0.6s] hover:border-b-3 border-[#5454D4] pb-[10px]"
+          class="font-['DM_Sans'] font-bold text-[15px] leading-[100%] tracking-[-0.47px] text-[#696871] transition-[0.6s] hover:text-[#19191B] hover:border-b-3 border-[#5454D4] pb-[10px]"
         >
           Home
         </a>
         <a
           href="#features"
-          class="font-dm font-bold text-[15px] leading-[100%] tracking-[-0.47px] kulrang transition-[0.6s] hover:border-b-3 border-[#5454D4] pb-[10px]"
+          class="font-['DM_Sans'] font-bold text-[15px] leading-[100%] tracking-[-0.47px] text-[#696871] transition-[0.6s] hover:text-[#19191B] hover:border-b-3 border-[#5454D4] pb-[10px]"
           >Features</a
         >
         <a
           href="#pricing"
-          class="font-dm font-bold text-[15px] leading-[100%] tracking-[-0.47px] kulrang transition-[0.6s] hover:border-b-3 border-[#5454D4] pb-[10px]"
+          class="font-['DM_Sans'] font-bold text-[15px] leading-[100%] tracking-[-0.47px] text-[#696871] transition-[0.6s] hover:text-[#19191B] hover:border-b-3 border-[#5454D4] pb-[10px]"
           >Pricing</a
         >
         <a
           href="#blog"
-          class="font-dm font-bold text-[15px] leading-[100%] tracking-[-0.47px] kulrang transition-[0.6s] hover:border-b-3 border-[#5454D4] pb-[10px]"
+          class="font-['DM_Sans'] font-bold text-[15px] leading-[100%] tracking-[-0.47px] text-[#696871] transition-[0.6s] hover:text-[#19191B] hover:border-b-3 border-[#5454D4] pb-[10px]"
           >Blog</a
         >
       </nav>
       <button
-        class="btn font-dm py-[19px] px-[60px] rounded-[10px] font-dm font-bold text-[17px]leading-[100%] tracking-[-0.53px] text-center text-[#FFFFFF]"
+        class="bg-[#FF7143] py-[19px] px-[60px] rounded-[10px] font-['DM_Sans'] font-bold text-[17px] transition duration-500 leading-[100%] tracking-[-0.53px] text-center text-[#FFFFFF] hover:bg-[#5454D4] hover:text-[#123434]"
       >
         Get Started
       </button>
@@ -91,27 +64,26 @@
     >
       <div class="intro__info">
         <h1
-          class="font-dm font-bold text-[80px] leading-[77px] tracking-[-2.5px] text-[#19191B] max-w-[462px] mb-[30px]"
+          class="font-['DM_Sans'] font-bold text-[80px] leading-[77px] tracking-[-2.5px] text-[#19191B] max-w-[462px] mb-[30px]"
         >
           Grow your subscription business
         </h1>
         <p
-          class="font-mulish font-normal text-[20px] leading-[30px] tracking-[-0.63px] text-[#696871] max-w-[459px] mb-[50px]"
+          class="font-['Mulish'] font-normal text-[20px] leading-[30px] tracking-[-0.63px] text-[#696871] max-w-[459px] mb-[50px]"
         >
           Outcome-centered products that reduce churn, optimize pricing, and
           grow your subscription business end-to-end.
         </p>
-        <div class="buttons flex gap-[40px]">
+        <div class="flex gap-[60px] items-center">
           <button
-            class="yashil py-[20px] px-[60px] rounded-[10px] font-dm font-bold text-[17px]leading-[100%] tracking-[-0.53px] text-center text-[#FFFFFF]"
+            class="font-['DM_Sans'] bg-[#5454D4] py-[20px] px-[60px] rounded-[10px] font-dm font-bold text-[17px]leading-[100%] tracking-[-0.53px] text-center text-[#FFFFFF] transition duration-500 hover:bg-[#FF7143] hover:text-[#111111]"
           >
             Get Started
           </button>
-          <div class="download">
-            <img
-              src="https://i.ibb.co/VYGrVLQR/Down-Arrow.png"
-              alt="rasm saytdan yuklanyabdi......"
-            />
+          <div
+            class="border-1 border-[#E7E7E7] rounded-[100%] p-[20px] transition duration-600 hover:bg-[#FF7143]"
+          >
+            <img src="https://i.ibb.co/wnS6LNN/arrow-down.png" alt="" />
           </div>
         </div>
       </div>
@@ -125,12 +97,14 @@
     </section>
     <section class="my-[200px] max-w-[1200px] mx-auto">
       <swiper-container
-        class="mySwiper"
+        class="mySwiper h-[100px]"
         pagination="true"
         pagination-clickable="true"
         slides-per-view="5"
-        space-between="5px"
         free-mode="true"
+        space-between="5px"
+        autoplay-delay="600"
+        autoplay-disable-on-interaction="false"
       >
         <swiper-slide
           ><img
@@ -192,19 +166,19 @@
       </div>
       <div class="third__section__info">
         <h1
-          class="font-dm font-bold text-[50px] leading-[57px] tracking-[-1.56px] text-[#19191B] mb-[30px]"
+          class="font-['DM_Sans'] font-bold text-[50px] leading-[57px] tracking-[-1.56px] text-[#19191B] mb-[30px]"
         >
           Subscription index
         </h1>
         <p
-          class="font-mulish font-normal text-[20px] leading-[30px] tracking-[-0.63px] text-[#696871] max-w-[460px] mb-[30px]"
+          class="font-['Mulish'] font-normal text-[20px] leading-[30px] tracking-[-0.63px] text-[#696871] max-w-[460px] mb-[30px]"
         >
           A daily dataset to keep you up to date on subscription market trends
           and what's happening in your vertical.
         </p>
         <a
           href="#"
-          class="font-dm font-bold text-[17px] leading-[100%] tracking-[-0.53px] text-[#5454D4]"
+          class="font-['DM_Sans'] font-bold text-[17px] leading-[100%] tracking-[-0.53px] text-[#5454D4]"
           >Learn more</a
         >
       </div>
@@ -215,19 +189,19 @@
     >
       <div class="third__section__info">
         <h1
-          class="font-dm font-bold text-[50px] leading-[57px] tracking-[-1.56px] text-[#19191B] mb-[30px]"
+          class="font-['DM_Sans'] font-bold text-[50px] leading-[57px] tracking-[-1.56px] text-[#19191B] mb-[30px]"
         >
           In-depth metrics
         </h1>
         <p
-          class="font-mulish font-normal text-[20px] leading-[30px] tracking-[-0.63px] text-[#696871] max-w-[460px] mb-[30px]"
+          class="font-['Mulish'] font-normal text-[20px] leading-[30px] tracking-[-0.63px] text-[#696871] max-w-[460px] mb-[30px]"
         >
           Accurate, real-time reporting at your fingertips. Getting data has
           never been easier.
         </p>
         <a
           href="#"
-          class="font-dm font-bold text-[17px] leading-[100%] tracking-[-0.53px] text-[#5454D4]"
+          class="font-['DM_Sans'] font-bold text-[17px] leading-[100%] tracking-[-0.53px] text-[#5454D4]"
           >Learn more</a
         >
       </div>
@@ -239,6 +213,7 @@
         />
       </div>
     </section>
+
     <section
       class="us max-w-[1200px] mx-auto flex justify-between items-center mb-[150px]"
     >
@@ -255,12 +230,12 @@
           </div>
           <div class="us__card__body">
             <h1
-              class="font-dm font-bold text-[24px] leading-[36px]tracking-[-0.75px] text-center mb-[20px] text-[#19191B]"
+              class="font-['DM_Sans'] font-bold text-[24px] leading-[36px]tracking-[-0.75px] text-center mb-[20px] text-[#19191B]"
             >
               Benchmarks
             </h1>
             <p
-              class="font-mulish font-normal text-[16px] leading-[24px]tracking-[-0.5px] text-center text-[#696871] max-w-[307px]"
+              class="font-['Mulish'] font-normal text-[16px] leading-[24px]tracking-[-0.5px] text-center text-[#696871] max-w-[307px]"
             >
               See how you stack up against comparable companies in similar
               stages.
@@ -279,12 +254,12 @@
           </div>
           <div class="us__card__body text-center">
             <h1
-              class="font-dm font-bold text-[24px] leading-[36px]tracking-[-0.75px] text-center mb-[20px] text-[#19191B]"
+              class="font-['DM_Sans'] font-bold text-[24px] leading-[36px]tracking-[-0.75px] text-center mb-[20px] text-[#19191B]"
             >
               Pricing Audit
             </h1>
             <p
-              class="font-mulish font-normal text-[16px] leading-[24px]tracking-[-0.5px] text-center text-[#696871] max-w-[307px]"
+              class="font-['Mulish'] font-normal text-[16px] leading-[24px]tracking-[-0.5px] text-center text-[#696871] max-w-[307px]"
             >
               Benchmark the health of your monetization and pricing strategy.
             </p>
@@ -302,12 +277,12 @@
           </div>
           <div class="us__card__body text-center">
             <h1
-              class="font-dm font-bold text-[24px] leading-[36px]tracking-[-0.75px] text-center mb-[20px] text-[#19191B]"
+              class="font-['DM_Sans'] font-bold text-[24px] leading-[36px]tracking-[-0.75px] text-center mb-[20px] text-[#19191B]"
             >
               Retention Audit
             </h1>
             <p
-              class="font-mulish font-normal text-[16px] leading-[24px]tracking-[-0.5px] text-center text-[#696871] max-w-[307px]"
+              class="font-['Mulish'] font-normal text-[16px] leading-[24px]tracking-[-0.5px] text-center text-[#696871] max-w-[307px]"
             >
               Audit where revenue leakage exists and where you can increase
               retention.
@@ -316,21 +291,22 @@
         </div>
       </div>
     </section>
+
     <section class="product max-w-[1200px] mx-auto my-[150px]">
       <div class="product__info flex justify-between items-center mb-[82px]">
         <h1
-          class="font-dm font-bold text-[60px] leading-[70px] tracking-[-1.88px] text-[#19191B] max-w-[523px]"
+          class="font-['DM_Sans'] font-bold text-[60px] leading-[70px] tracking-[-1.88px] text-[#19191B] max-w-[523px]"
         >
           Get the right plan for future product.
         </h1>
         <div class="product__buttons">
           <button
-            class="yashil py-[13px] px-[30px] rounded-[10px] font-dm font-bold text-[17px]leading-[100%] tracking-[-0.53px] text-center text-[#FFFFFF]"
+            class="bg-[#5454D4] py-[13px] px-[30px] rounded-[10px] font-['DM_Sans'] font-bold text-[17px] leading-[100%] tracking-[-0.53px] text-center text-[#FFFFFF] transition duration-600 hover:bg-[#F7F7FB] hover:text-[#19191B]"
           >
             Yearly
           </button>
           <button
-            class="bg__kulrang py-[13px] px-[30px] rounded-[10px] font-dm font-bold text-[17px]leading-[100%] tracking-[-0.53px] text-center text-[#19191B]"
+            class="bg-[#F7F7FB] py-[13px] px-[30px] rounded-[10px] font-['DM_Sans'] font-bold text-[17px] leading-[100%] tracking-[-0.53px] text-center text-[#19191B] transition duration-600 hover:bg-[#5454D4] hover:text-[#FFFFFF]"
           >
             Monthly
           </button>
@@ -338,41 +314,41 @@
       </div>
       <div class="product__cards flex justify-between items-center">
         <div
-          class="product__card rounded-[10px] bg-[#F8F8F8] px-[94px] py-[74px] max-w-[440px]"
+          class="product__card rounded-[10px] bg-[#F8F8F8] px-[94px] py-[74px] max-w-[440px] transition duration-600 hover:bg-[#FF7143] hover:py-[85px] shadow-[]"
         >
           <h5
-            class="font-dm font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871]"
+            class="font-['DM_Sans'] font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] transition duration-600 hover:text-[#ffffff]"
           >
             Starter
           </h5>
           <h1
-            class="font-dm font-bold text-[60px] leading-[56px] tracking-[-1.03px] text-center text-[#1D293F] mt-[22px] mb-[28px]"
+            class="font-['DM_Sans'] font-bold text-[60px] leading-[56px] tracking-[-1.03px] text-center text-[#1D293F] mt-[22px] mb-[28px]"
           >
             Free
           </h1>
           <p
-            class="font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] my-[20px]"
+            class="font-['Mulish'] font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] my-[20px] transition duration-600 hover:text-[#ffffff]"
           >
             1 Website
           </p>
           <p
-            class="font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] my-[20px]"
+            class="font-['Mulish'] font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] my-[20px] transition duration-600 hover:text-[#ffffff]"
           >
             5 GB Hosting
           </p>
           <p
-            class="font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] my-[20px]"
+            class="font-['Mulish'] font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#696871] my-[20px] transition duration-600 hover:text-[#ffffff]"
           >
             Limited Support
           </p>
           <button
-            class="rounded-[10px] py-[25px] px-[50px] border border-[#EAE9F2] font-dm font-bold text-[17px] leading-[100%] tracking-[-0.53px]text-center text-[#5454D4]"
+            class="rounded-[10px] py-[25px] px-[50px] border border-[#EAE9F2] font-['DM_Sans'] font-bold text-[17px] leading-[100%] tracking-[-0.53px]text-center text-[#5454D4] hover:bg-[#9F3919] hover:text-[#FFFFFF]"
           >
             Get Started
           </button>
         </div>
         <div
-          class="product__card rounded-[10px] bg-[#FF7143] px-[94px] py-[84px] max-w-[440px]"
+          class="product__card rounded-[10px] bg-[#F8F8F8] px-[94px] py-[74px] max-w-[440px]"
         >
           <h5
             class="font-dm font-normal text-[18px] leading-[28px] tracking-[-0.56px] text-center text-[#FFFFFF]"
